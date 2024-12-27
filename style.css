@@ -1,485 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+    font-family: "Monserrat", sans-serif;
 }
-
-
 
 body {
-    height: 100vh;
+    background-color: #c9c9c9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 48, 91, 1) 35%, rgba(0, 128, 200, 1) 100%);
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    justify-content: space-between;
     width: 100%;
+    top: 0;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.container_logo {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    cursor: pointer;
+}
+
+.logo1 {
+    width: 80px;
+    height: 110px;
+    margin-left: 20px;
+}
+
+.logo2 {
+    width: 134px;
+    height: 136px;
+    margin-right: 40px;
+}
+
+header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em; /* Aumentei um pouco o tamanho da fonte */
+    font-weight: lighter;
+}
+
+.foodpark {
+    margin: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.tc {
+    width: 18%;
+    background-color: #fbab18;
+    font-size: 1em;
+    text-align: center;
+    color: #00305B;
+    font-weight: 900;
+    float: left;
+    padding: 15px 0;
+    margin-block: auto;
+    z-index: 2;
+}
+
+.rs {
+    display: flex;
+    width: 18%;
+    background-color: #fbab18;
+    text-align: center;
+    color: #00305B;
+    float: right;
+    margin-block: auto;
+    padding: 15px 0;
+}
+
+.rs a {
+    margin-top: 20px;
+}
+
+.h4 {
+    width: 64%;
+    margin: 0 auto;
+    color: #00305B;
+    background-color: #fbab18;
+    text-align: center;
+    margin-inline: center;
+    font-weight: 400;
+    font-size: 1.2em;
+    float: center;
+    margin-block: auto;
+    padding: 15px 0;
+}
+
+.rs {
+    padding: 0px 88px;
+}
+
+.rs a {
+    margin-left: 30px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.rs a i {
+    color: #00305B;
+    font-size: 1.2em;
+}
+
+.rs a i:hover {
+    color: white;
+}
+
+#area-logo,
+#area-menu {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#area-principal {
+    width: 100%;
+    height: auto;
+    background-color: #E9E9E9;
+    margin-top: 20px;
+}
+
+#area-principal img {
+    width: auto;
+    margin-left: 40px;
+    float: center;
+}
+
+/* Seção Lanches (Melhorias) */
+.lanche,
+.lanche_2,
+.lanche_3,
+.lanche_4,
+.lanche_hamburguer,
+.lanche_6,
+.lanche_7,
+.lanche_8,
+.lanche_pizza,
+.lanche-coxinha,
+.lanche_crepe,
+.lanche_oriental,
+.lanche_churrasco,
+.lanche_feijoada,
+.lanche_bauru,
+.lanche_acai,
+.lanche_pastel,
+.lanche_italiano,
+.lanche_hotDog {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+     min-height: 400px;
+    padding: 40px 20px;
+    position: relative;
+    display: flex;
+     gap: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 45px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+/* ícones */
+.caixa,
+.caixa2,
+.caixa3,
+.caixa4,
+.caixa5,
+.caixa6,
+.caixa7 {
+    width: 22%;
+    margin-bottom: 10px;
+}
+
+.caixa img,
+.caixa2 img,
+.caixa3 img,
+.caixa4 img,
+.caixa5 img,
+.caixa6 img,
+.caixa7 img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.caixa img:hover,
+.caixa2 img:hover,
+.caixa3 img:hover,
+.caixa4 img:hover,
+.caixa5 img:hover,
+.caixa6 img:hover,
+.caixa7 img:hover {
+    transform: scale(1.05);
 }
 
 
-
-
-
-.lanche  {
+/* Imagens de fundo (URL) */
+.lanche {
     background-image: url(imagens_parte/pastel.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
 }
 
-
-.lanche img:hover {
-    padding: -50px;
-    border-radius: 800px;
-}
-
-
-
-.lanche_2  {
+.lanche_2 {
     background-image: url(imagens_parte/italiano.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;  
-  grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
-    
-}
-
-.caixa {
-    margin: 10px;
 }
 
 .lanche_3 {
-    background-image: url(View/imagens_parte/mexicano.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
-    
+    background-image: url(imagens_parte/mexicano.png);
 }
-
 
 .lanche_4 {
     background-image: url(imagens_parte/imgLanche.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;
-    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    align-items: center;
-    
-    
 }
 
-
-.lanche_hamburguer{
-    background-image: url(View/imagens_parte/hambuguer.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;
-    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    align-items: center;
-    
+.lanche_hamburguer {
+    background-image: url(imagens_parte/hambuguer.png);
 }
 
-.lanche_6{
+.lanche_6 {
     background-image: url(imagens_parte/Coxinha.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
 }
 
-.lanche_7{
+.lanche_7 {
     background-image: url(imagens_parte/acai.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
-    
 }
 
-.lanche_8{
+.lanche_8 {
     background-image: url(imagens_parte/espagete.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
-    
-}
-.lanche_pizza{
-    background-image: url(View/imagens_parte/pizza.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
-    
 }
 
-.lanche-coxinha{
-    background-image: url(View/imagens_parte/coxinhaa.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;
-    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    align-items: center;
-    
-    
+.lanche_pizza {
+    background-image: url(imagens_parte/pizza.png);
 }
 
-.lanche_crepe{
-    background-image: url(View/imagens_parte/crepe.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
+.lanche-coxinha {
+    background-image: url(imagens_parte/coxinhaa.png);
 }
 
-.lanche_oriental{
-    background-image: url(View/imagens_parte/Lanche_japones.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
+.lanche_crepe {
+    background-image: url(imagens_parte/crepe.png);
 }
 
-.lanche_churrasco{
-    background-image: url(View/imagens_parte/churrasco.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
+.lanche_oriental {
+    background-image: url(imagens_parte/Lanche_japones.png);
 }
 
-.lanche_feijoada{
-    background-image: url(View/imagens_parte/feijoada.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
+.lanche_churrasco {
+    background-image: url(imagens_parte/churrasco.png);
 }
 
-
-.lanche_bauru{
-    background-image: url(View/imagens_parte/Bauru.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
+.lanche_feijoada {
+    background-image: url(imagens_parte/feijoada.png);
 }
 
-.lanche_acai{
-    background-image: url(View/imagens_parte/acai.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;
-    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
-    
+.lanche_bauru {
+    background-image: url(imagens_parte/Bauru.png);
 }
 
-
-
-
-
-
-
-.lanche_pastel{
-    background-image: url(View/imagens_parte/pastel.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;
-    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
+.lanche_acai {
+    background-image: url(imagens_parte/acai.png);
 }
 
-
-
-.lanche_italiano{
-    background-image: url(View/imagens_parte/italiano.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;
-    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
+.lanche_pastel {
+    background-image: url(imagens_parte/pastel.png);
 }
 
-
-
-
-
-
-
-.lanche_hotDog { 
-    background-image: url(View/imagens_parte/hot-dog.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 95%;
-    height: 950px;
-    position: relative;
-    display: flex;    grid-template-columns: repeat(4, 90px);
-    gap: 85px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 45px;
-    
+.lanche_italiano {
+    background-image: url(imagens_parte/italiano.jpg);
 }
 
+.lanche_hotDog {
+    background-image: url(imagens_parte/hot-dog.png);
+}
 
-.caixa{
+/* Passeio Virtual */
+.passeio {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10%;
-    height: auto;
+     width: 80%;
+    margin: 40px auto;
     margin-bottom: 10px;
-   
 }
 
-.caixa2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    height: auto;
-    margin-bottom: 10px;
-    
-   
-}
-
-
-.caixa3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    height: auto;
-    margin-bottom: 10px;
-   
-}
-
-.caixa4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    height: auto;
-    margin-bottom: 10px;
-   
-}
-
-.caixa5{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    height: auto;
-    margin-bottom: 10px;
-   
-}
-
-
-.caixa6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    height: auto;
-    margin-bottom: 10px;
-   
-}
-
-.caixa7{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    height: auto;
-    margin-bottom: 10px;
-   
-}
-
-
-.passeio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    height: auto;
-    margin-bottom: 10px;
-   
-}
-
-.estrutura{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10%;
-    height: auto;
-   
-}
-
-
-
-.passeio-virtual{
-    /* background-image: url(imagens_parte/passeio.jpg); */
-    background-position: center;
+.passeio-virtual {
+   background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 95%;
-    height: 900px;
-    display: block;
-    grid-template-columns: repeat(4, 90px);
+    min-height: 500px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
     border-radius: 45px;
-    padding-top: 5px;
     background-color: #fff;
-    width: 90%;
-    height: 900px;
-    border-radius: 45px;
     margin: 15px 0;
-    
 }
-
 
 .passeio-virtual p {
     margin-top: 7%;
@@ -487,321 +316,300 @@ body {
     justify-content: center;
     width: 70%;
     margin-left: 15%;
-    font-size: 20px;
-
+    font-size: 1.2em; /* Ajustei para em */
 }
 
-/* .passeio-estrutura{
-    /* background-image: url(imagens_parte/estrutura.png); */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size:auto;
-    width: 95%;
-    height: 2400px;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    
-} */
+.passeio-virtual iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 25px;
+}
 
-.estrutura{
-    height: 2000px ;
-    width: 79%;
-    margin-left: 15%;
+/* Estrutura */
+.estrutura {
+   padding: 40px 20px;
+    width: 80%;
+    margin: 40px auto;
     background-color: #fff;
     border-radius: 45px;
-    
-
 }
 
-.subtitulo{
+.subtitulo {
     font-family: "Monserrat", sans-serif;
     color: #00305B;
-    font-size: 60px;
+    font-size: 3em;
     font-weight: bolder;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-family: "Monserrat", sans-serif;
-}
-
-body {
-background-color: #c9c9c9;
-height: 100vh;
-}
-
-header{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,48,91,1) 35%, rgba(0,128,200,1) 100%);
-    display: flex;
-    align-items: center;
-    padding: 10px 40px;
-    justify-content: space-between;
-    /* position: fixed; */
+/* Como Chegar */
+.fixagem-area {
     width: 100%;
-    top: 0;
-    height: 150px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-  
-}
-.container_logo{
-display: flex;
-align-items: center;
-gap: 33px;
-cursor: pointer;
-}
-.logo1{
-width:80px;
-height: 110px;
-margin-left: 20px;
-}
-
-.logo2{
-width: 134px;
-height: 136px;
-margin-right: 40px;
-}
-
-header h1{
-color: #fff;
-text-transform: uppercase;
-font-size: 60px;
-font-weight: lighter;
-}
-
-.foodpark{
-  margin: center;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  text-align: center;
-  font-size: 120%;   
-}
-
-/* #foodpark{
-    font-size: 60px;
-    font-weight: bolder;
-} */
-.tc {
-  /* height:1080px; */
-  height: 60px;
-  width: 18%;
-  background-color: #fbab18;
-  font-size: 15px;
-  text-align: center;
-  color: #00305B;
-  font-weight: 900;
-  font-size: x-large;
-  float: left;
-  padding: 15px 0;
-  margin-block: auto;
-  z-index: 2;
-  
-  
-}
-
-.rs {
-  display: flex;
-  height: 60px;
-  width: 18%;
-  background-color: #fbab18;
-  text-align: center;
-  color: #00305B;
-  /* font-weight: 900;
-  font-size: x-large; */
-  float: right;
-  margin-block: auto;
-  padding: 15px 0;
-  
-    
-
-}
-
-.rs a{
-  margin-top: 20px;
-  margin-right: 5px;
-}
-
-.h4{
-  height: 60px;
-  width:64%;
-  margin: 0 auto;
-  color: #00305B;
-  background-color: #fbab18;
-  text-align: center;
-  margin-inline: center;
-  font-weight: 400;
-  font-size: x-large;
-  float: center;
-  /* height: 60px; */
-  margin-block: auto;
-  padding: 15px 0;
-}
-
-.rs{
-  padding: 0px 88px;
-  }
-  .rs a{
-  margin-left: 30px;
-  width: 20px;
-  }
-  .rs a i{
-    color: #00305B;
-  }
-  .rs a i:hover{
-    color: white;
-  }
-
-  #area-logo, #area-menu{
-    padding: 10px;
-    border-radius: 30px;
-    }
-    
-  #area-principal{
-    width: 100%;
-    height: auto;
-    background-color: #E9E9E9;
-   
-  }
-
-    #area-principal img{
-        width: 0 auto;
-        /* display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center; */
-        margin-left: 40px;
-        float: center;
-        
-    }
-
- #lanche {
-  margin-top: 50px;
-  
- }
-
- #lanche img {
-  border-radius: 50px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
- }
-
-footer{
-  margin-top: 30px;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,48,91,1) 35%, rgba(0,128,200,1) 100%);
-  display: flex;
-  align-items: center;
-  padding: 10px 40px;
-  justify-content: flex-start;
-  color: white;
-  text-decoration: none;
-  height: 250px;
-  position: static;
-  bottom: 0;
-  width: 100%;
-  z-index: 20;
-}
-.footer_text{
-  margin-left: 40px;
-  text-decoration: none;
-}
-.footer_text a{
-   text-decoration: none;
-   color: white;
-}
-.footer_text a:hover{
-  text-decoration: none;
-  color: #F6A828;
-}
-
-section {
-  width:88%;
-    height: 100%;
-    margin-left: 10%;
-    z-index: -3;
-}
-
-.fixagem-area {  
-  width: 100%;
-  height: 100vh;
-  z-index: 10;  
+    z-index: 10;
 }
 
 .como-chegar {
-  background-color: white;
-  width: 79%;
-  height: 800px;
-  overflow: hidden;
-  border-radius: 45px;
-  margin-left: 15%;
-  margin-top: 40px;
-  position: static;
-  
+    background-color: white;
+    width: 80%;
+    padding: 40px 20px;
+    overflow: hidden;
+    border-radius: 45px;
+    margin: 40px auto;
 }
 
 .titulo_local {
-  color: #00305B;
-  text-align: center;
-  font-size: 52px;
-  font-weight: bolder;
-  padding-top: 20px;
-  margin-left: 77px;
-
+    color: #00305B;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-top: 20px;
 }
-
 
 .area-locais {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 20px;
-  gap: 50px;
-  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
 }
-
 
 .text-map {
-  text-align: center;
-  color: #00305B;
-   font-size: 18px;
-   font-weight: bolder;
-     z-index: 12; 
-
+    text-align: center;
+    color: #00305B;
+    font-size: 1em;
+    font-weight: bolder;
+    z-index: 12;
 }
 
-.video-local, .mapa{
-  z-index: 12; 
+.video-local,
+.mapa {
+    z-index: 12;
 }
 
-.video-local iframe{
-  border: solid 4px #CECACA;
-  border-radius: 35px;
-  padding: 10px;
-  cursor: pointer;
- 
+.video-local iframe {
+    border: solid 4px #CECACA;
+    border-radius: 35px;
+    cursor: pointer;
+    width: 350px;
+    height: 250px;
 }
-.mapa iframe  {
-  border-radius: 35px;
-  padding: 10px;
-  cursor: pointer;
-  
 
+.mapa iframe {
+    border-radius: 35px;
+    cursor: pointer;
+    width: 350px;
+    height: 250px;
 }
 
 .text-final {
-  text-align: center;
-  margin-left: 50px;
-  color: #00305B;
-  font-size: 20px;
-  font-weight: bolder;
-  margin-top: 15px;
+    text-align: center;
+    color: #00305B;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 48, 91, 1) 35%, rgba(0, 128, 200, 1) 100%);
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    justify-content: flex-start;
+    color: white;
+    text-decoration: none;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.footer_text {
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.footer_text a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_text a:hover {
+    text-decoration: none;
+    color: #F6A828;
+}
+
+/* --- Media Queries --- */
+/* Tablet (768px para baixo) */
+@media (max-width: 768px) {
+    .caixa,
+    .caixa2,
+    .caixa3,
+    .caixa4,
+    .caixa5,
+    .caixa6,
+    .caixa7 {
+      width: 45%;
+    }
+    .lanche,
+    .lanche_2,
+    .lanche_3,
+    .lanche_4,
+    .lanche_hamburguer,
+    .lanche_6,
+    .lanche_7,
+    .lanche_8,
+    .lanche_pizza,
+    .lanche-coxinha,
+    .lanche_crepe,
+    .lanche_oriental,
+    .lanche_churrasco,
+    .lanche_feijoada,
+    .lanche_bauru,
+    .lanche_acai,
+    .lanche_pastel,
+    .lanche_italiano,
+    .lanche_hotDog {
+      padding: 30px 15px;
+     }
+    .passeio-virtual p {
+        font-size: 1em;
+        margin: 7% 5% 0;
+    }
+    .passeio-virtual iframe {
+        height: 300px;
+    }
+    .subtitulo {
+        font-size: 2em;
+    }
+    .video-local iframe,
+    .mapa iframe {
+        width: 280px;
+        height: 200px;
+    }
+    .text-final {
+        font-size: 1em;
+    }
+}
+
+/* Celular (480px para baixo) */
+@media (max-width: 480px) {
+    .container_logo {
+        gap: 10px;
+    }
+    .logo1 {
+        width: 60px;
+        height: 80px;
+        margin-left: 10px;
+    }
+    .logo2 {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    .foodpark {
+        font-size: 1em;
+    }
+    .tc,
+    .rs,
+    .h4 {
+        width: 100%;
+        font-size: 0.9em;
+        padding: 10px 0;
+    }
+    .rs {
+        padding: 10px 0;
+    }
+    .rs a {
+        margin-left: 15px;
+    }
+    .rs a i {
+        font-size: 1em;
+    }
+    .caixa,
+    .caixa2,
+    .caixa3,
+    .caixa4,
+    .caixa5,
+    .caixa6,
+    .caixa7 {
+      width: 90%;
+    }
+    .lanche,
+    .lanche_2,
+    .lanche_3,
+    .lanche_4,
+    .lanche_hamburguer,
+    .lanche_6,
+    .lanche_7,
+    .lanche_8,
+    .lanche_pizza,
+    .lanche-coxinha,
+    .lanche_crepe,
+    .lanche_oriental,
+    .lanche_churrasco,
+    .lanche_feijoada,
+    .lanche_bauru,
+    .lanche_acai,
+    .lanche_pastel,
+    .lanche_italiano,
+    .lanche_hotDog {
+        padding: 20px 10px;
+         gap: 10px;
+    }
+    .passeio {
+        width: 95%;
+    }
+    .passeio-virtual {
+        padding: 20px 10px;
+    }
+    .passeio-virtual p {
+        font-size: 0.9em;
+        margin: 5% 5% 0;
+    }
+    .passeio-virtual iframe {
+        height: 250px;
+    }
+    .estrutura {
+        padding: 20px 10px;
+        width: 95%;
+    }
+    .subtitulo {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+    .como-chegar {
+        padding: 20px 10px;
+        width: 95%;
+    }
+    .titulo_local {
+        font-size: 1.8em;
+        margin-top: 10px;
+    }
+    .area-locais {
+        flex-direction: column;
+         gap: 15px;
+    }
+    .video-local iframe,
+    .mapa iframe {
+        width: 95%;
+        height: 220px;
+    }
+    .text-final {
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+    footer {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer_text {
+        margin: 0 0 10px 0;
+    }
 }
